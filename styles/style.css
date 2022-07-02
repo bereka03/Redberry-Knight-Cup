@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+.container {
+    width: 1920px;
+    overflow: hidden;
+}
+.landing-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.above {
+    background: #7025FB;
+    padding: 30px 0 30px 80px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.title {
+    color: #FFFFFF;
+}
+.below img {
+    width: 100%;
+}
+.rightside {
+    background-color: #FD5334;
+    padding: 390px 200px 0 85px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.main-title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 109px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: inline-block;
+    vertical-align: middle;
+}
+.content-wrapper span {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #212529;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    background: #212529;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding-left: 14px;
+}
+.link img {
+    margin: 13px 14px 13px 12px;
+}

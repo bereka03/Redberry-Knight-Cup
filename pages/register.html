@@ -46,30 +46,38 @@
                             <h1>Personal Information</h1>
                             <p>This is basic informaton fields</p>
                         </div>
-                        <form action="index.html">
+                        <form action="" id="registration" method="post">
                             <fieldset>
-                                <input type="name" placeholder="Name" name="name"  class="name" id="name" required>
-                                <img src="../img/check.svg" alt="check icon" class="check">
-                                <input type="email" placeholder="Email" name="email" id="email" required>
-                                <img src="../img/check.svg" alt="check icon" class="check">
-                                <input type="tel" placeholder="Phone number" name="phone number" id="phone" required>
-                                <img src="../img/check.svg" alt="check icon" class="check">
-                                <input type="datetime-local" name="date" id="date" placeholder="Date of birth" required>
-                                <img src="../img/check.svg" alt="check icon" class="check">
+                                <div class="input-wrapper">
+                                    <input type="name" placeholder="Name" name="name"  class="name" id="name">
+                                    <img src="../img/check.svg" alt="check icon" class="check">
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="email" placeholder="Email" name="email" id="email">
+                                    <img src="../img/check.svg" alt="check icon" class="check" id="second">
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="tel" placeholder="Phone number" name="phone_number" id="phone">
+                                    <img src="../img/check.svg" alt="check icon" class="check" id="third">
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="datetime-local" name="date" id="date" placeholder="Date of birth">
+                                    <img src="../img/check.svg" alt="check icon" class="check">
+                                </div>
+                                <div class="button-wrapper">
+                                    <a href="../index.html" class="back">Back</a>
+                                        <button type="submit" class="submit">Next <img src="../img/arrow.svg" alt="arrow icon"></button>
+                                </div>
                             </fieldset>
-                            <div class="button-wrapper">
-                                <a href="../index.html" class="back">Back</a>
-                                <a href="#">
-                                    <button type="submit">Next <img src="../img/arrow.svg" alt="arrow icon"></button>
-                                </a>
-                            </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="../js/flatpckr.js"></script>
+    <script src="../js/register.js"></script>
 </body>
 </html>

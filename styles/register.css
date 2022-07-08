@@ -25,6 +25,7 @@
 .below img {
     width: 100%;
 }
+/* ***************** rightside *************** */
 .title-above {
     border-bottom: 1px solid rgba(185, 180, 196, 0.3);
     font-family: 'Open Sans';
@@ -120,6 +121,9 @@ fieldset {
     color: #95939A;
 }
 input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 95%;
     padding: 8px 61px 8px 16px;
     outline: none;
     border: none;
@@ -142,7 +146,6 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 88px;
 }
 .back {
     padding: 12px 24px;
@@ -166,7 +169,11 @@ button {
 .check {
     width: 20px;
     height: 20px;
-    display: none;
+    display: inline-block;
+    vertical-align: middle;
+    visibility: hidden;
+    position: relative;
+    right: 2em;
 }
 .label {  
     font-family: 'Open Sans';
@@ -175,4 +182,26 @@ button {
     font-size: 16px;
     line-height: 150%;
     color: #000000;
+}
+.error {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #DC3545;
+    flex: none;
+    margin-left: 10px;
+}
+input.error {
+    background-color: #FFEFEF;
+}
+input.error::placeholder {
+    color: #DC3545;
+}
+.visible {
+    visibility: visible;
+}
+.error.valid {
+    display: none !important;
 }

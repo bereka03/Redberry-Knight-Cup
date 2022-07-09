@@ -146,6 +146,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 95%;
 }
 .back {
     padding: 12px 24px;

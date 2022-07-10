@@ -51,7 +51,7 @@ $(function() {
                 }
             },
             errorPlacement: function(error, element){
-                error.insertAfter(element.parent());
+                error.insertAfter(element);
             }
         });
         $('.submit').click(function() {

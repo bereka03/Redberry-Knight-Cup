@@ -102,9 +102,9 @@ fieldset {
     gap: 48px;
 }
 .text-wrapper {
-    margin-bottom: 85px;
+    margin-bottom: 37px;
 }
-.text-wrapper h1 {
+.text-wrapper legend {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -191,7 +191,6 @@ button {
     font-size: 16px;
     line-height: 150%;
     color: #DC3545;
-    flex: none;
     margin-left: 10px;
 }
 input.error {

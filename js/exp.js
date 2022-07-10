@@ -109,6 +109,7 @@ $(function() {
 
             $('button').click(function(){
                 if ($experienceForm.valid()){
+                    // data-ს გაგზავნა
                     location.href = "../pages/onboard.html";
                     localStorage.clear();
                 }
@@ -138,4 +139,3 @@ inputs[1].addEventListener('click', ()=> {
 //     let level = localStorage.getItem("level");
 //     if (level !== null) $('.dd-selected-value').val(level);
 // }
-

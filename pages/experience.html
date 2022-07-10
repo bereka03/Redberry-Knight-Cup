@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="../styles/experience.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <title>RedBerry Knight Cup | Experience</title>
 </head>
 <body>
-    <section class="landing">
+    <section class="excperience">
         <div class="container">
-            <div class="landing-inner">
+            <div class="experience-inner">
                 <div class="leftside">
                     <div class="above">
                         <img src="../img/Vector.svg" alt="Knight icon">
@@ -24,11 +25,11 @@
                     </div>
                 </div>
                 <div class="rightside">
-                    <p class="title-above">Start creating your Account</p>
+                    <p class="title-above">First step is done, continue to finish onboarding</p>
                     <div class="wrapp">
                         <div class="boxes-wrapper">
                             <div class="each-box-wrapper">
-                                <span class="first" id="pers">1</span>
+                                <span class="first" id="pers"><img src="../img/box-check.svg" alt="check icon"></span>
                             </div>
                             <div class="line"></div>
                             <div class="each-box-wrapper">
@@ -41,31 +42,32 @@
                         </div> 
                     </div>
                     <div class="rightside-below">
-                        <div class="text-wrapper">
-                            <h1>Personal Information</h1>
-                            <p>This is basic informaton fields</p>
-                        </div>
-                        <form action="" id="registration" method="post">
+                        <form action="#" id="experienceForm" method="get">
                             <fieldset>
-                                <div class="input-wrapper">
-                                    <input type="name" placeholder="Name" name="name"  class="name" id="name">
-                                    <img src="../img/check.svg" alt="check icon" class="check">
+                                <div class="text-wrapper">
+                                    <legend>Chess experience</legend>
+                                    <p>This is basic informaton fields</p>
                                 </div>
-                                <div class="input-wrapper">
-                                    <input type="email" placeholder="Email" name="email" id="email">
-                                    <img src="../img/check.svg" alt="check icon" class="check" id="second">
+                                <div class="selects-wrapper">
+                                    <div class="each-select-wrapper">
+                                        <select name="experience" id="experience">
+                                        </select>
+                                    </div>
+                                    <div class="each-select-wrapper">
+                                        <select name="character" id="character">
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="input-wrapper">
-                                    <input type="tel" placeholder="Phone number" name="phone_number" id="phone">
-                                    <img src="../img/check.svg" alt="check icon" class="check" id="third">
-                                </div>
-                                <div class="input-wrapper">
-                                    <input type="datetime-local" name="date" id="date" placeholder="Date of birth">
-                                    <img src="../img/check.svg" alt="check icon" class="check">
+                                <div class="radio-wrapper">
+                                    <legend>Have you participated in the Redberry Championship? <span>*</span></legend>
+                                    <input type="radio" name="radio" id="yes" checked>
+                                    <label for="yes">Yes</label>
+                                    <input type="radio" name="radio" id="no">
+                                    <label for="no">No</label>
                                 </div>
                                 <div class="button-wrapper">
-                                    <a href="../index.html" class="back">Back</a>
-                                        <button type="submit" class="submit">Next <img src="../img/arrow.svg" alt="arrow icon"></button>
+                                    <a href="./register.html" class="back">Back</a>
+                                    <button type="submit" class="submit">Done</button>
                                 </div>
                             </fieldset>
                         </form>
@@ -74,5 +76,9 @@
             </div>
         </div>
     </section>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="../js/exp.js"></script>
 </body>
 </html>

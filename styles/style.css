@@ -71,6 +71,8 @@
     color: #FFFFFF;
     border-radius: 8px;
     padding-left: 14px;
+    transition: 0.3s all ease-out;
+    border: 1px solid transparent;
 }
 .link img {
     margin: 13px 14px 13px 12px;

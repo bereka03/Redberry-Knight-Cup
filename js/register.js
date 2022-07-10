@@ -126,6 +126,4 @@ window.onload = function() {
 
     let date = localStorage.getItem("date");
     if (date !== null) $('#date').val(date);
-
 }
-
